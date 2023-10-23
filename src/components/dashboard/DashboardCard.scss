@@ -1,0 +1,9 @@
+.card-hover:hover {
+  box-shadow: rgba(85, 22, 83, 0.2) 0px 7px 29px 0px !important;
+  transform: scale(1.05)!important;
+}
+
+.card-hover {
+  cursor: pointer;
+  transition: transform 0.2s; /* Animation */
+}
