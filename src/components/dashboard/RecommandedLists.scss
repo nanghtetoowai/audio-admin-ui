@@ -1,0 +1,23 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hover-show-icon:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000ad !important;
+  .play-icon {
+    display: block !important;
+    animation: fadeIn 1s !important;
+  }
+}
+
+.play-icon {
+  display: none;
+}

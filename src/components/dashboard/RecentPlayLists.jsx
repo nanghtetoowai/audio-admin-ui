@@ -1,4 +1,4 @@
-import { HeartFilled, HeartOutlined } from "@ant-design/icons";
+import { HeartFilled, HeartOutlined, PlayCircleOutlined } from "@ant-design/icons";
 import { Avatar, Table } from "antd";
 import React from "react";
 import { Ellipsis } from "react-bootstrap/esm/PageItem";
@@ -8,7 +8,11 @@ export default function RecentPlaylists() {
     {
       title: "Name",
       render: (text) => (
-        <Avatar shape="square" className="hover-bg-white cursor-pointer" />
+        <Avatar
+          shape="square"
+          icon={<PlayCircleOutlined className="play-icon" />}
+          className="hover-show-icon cursor-pointer"
+        />
       ),
       width: 30,
     },
@@ -75,7 +79,12 @@ export default function RecentPlaylists() {
   return (
     <div>
       <h4 className="text-muted">Recent Played</h4>
-      <Table columns={columns} dataSource={data} showHeader={false} />
+      <Table
+        columns={columns}
+        dataSource={data}
+        showHeader={false}
+        pagination={false}
+      />
     </div>
   );
 }
