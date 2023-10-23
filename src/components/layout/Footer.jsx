@@ -10,7 +10,7 @@ import {
   SwapOutlined,
   TabletOutlined,
 } from "@ant-design/icons";
-import { Avatar, Col, Progress, Row, Slider, Space } from "antd";
+import { Avatar, Col, Row, Slider, Space } from "antd";
 import React from "react";
 
 export default function FooterBar() {

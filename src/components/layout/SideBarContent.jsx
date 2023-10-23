@@ -1,10 +1,9 @@
-import { Avatar, Badge, Menu, Tag } from "antd";
+import { Avatar, Menu, Tag } from "antd";
 import React from "react";
 import "./SideBarContent.scss";
 import {
   DownOutlined,
   HomeOutlined,
-  MinusCircleFilled,
   PicLeftOutlined,
   PicRightOutlined,
   PlusCircleOutlined,

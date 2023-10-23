@@ -1,5 +1,5 @@
-import { BorderOutlined, HeartFilled, HeartOutlined } from "@ant-design/icons";
-import { Avatar, Space, Table, Tag } from "antd";
+import { HeartFilled, HeartOutlined } from "@ant-design/icons";
+import { Avatar, Table } from "antd";
 import React from "react";
 import { Ellipsis } from "react-bootstrap/esm/PageItem";
 
@@ -7,7 +7,9 @@ export default function RecentPlaylists() {
   const columns = [
     {
       title: "Name",
-      render: (text) => <Avatar shape="square" className="hover-bg-white cursor-pointer"/>,
+      render: (text) => (
+        <Avatar shape="square" className="hover-bg-white cursor-pointer" />
+      ),
       width: 30,
     },
     {

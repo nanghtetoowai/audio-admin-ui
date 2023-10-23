@@ -1,5 +1,4 @@
-import logo from "./logo.svg";
-import { BrowserRouter, Route, Router, Switch } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Dashboard from "./pages/dashboard/Dashboard";
 import AppLayout from "./components/layout/AppLayout";
 
